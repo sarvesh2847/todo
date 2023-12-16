@@ -52,7 +52,8 @@ class _todopageState extends State<todopage> {
       db.Todolist.add([_controller.text, false]);
       _controller.clear();
     });
-    //Navigator.of(context).pop();
+    Navigator.of(context).pop();
+    db.updatedata();
   }
 
 // create new task
@@ -75,6 +76,7 @@ class _todopageState extends State<todopage> {
     setState(() {
       db.Todolist.removeAt(index);
     });
+    db.updatedata();
   }
 
   @override
