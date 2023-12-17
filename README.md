@@ -1,4 +1,6 @@
-# todo
+#TODO
+
+Todolist to track daily goals with the database to store data using hive.
 
 A new Flutter project.
 
